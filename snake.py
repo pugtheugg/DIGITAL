@@ -27,7 +27,6 @@ DOWN = 2
 LEFT = 4
 RIGHT = 6
 
-pause = False
 
 # block (size of 1 block)
 block = [20, 20]
@@ -290,7 +289,7 @@ def game():
         # Insert a snake_head
         snake.insert(0, list(snake_head))
 
-        # Se a snake_head tiver as mms coordenadas que a food entao...
+        # If the snake_head has the same coordinates as the food then ...
         if snake_head[0] == foodXY[0] and snake_head[1] == foodXY[1]:
             food = 0
             current_score += 5
